@@ -68,7 +68,7 @@ const cake = [
     {
         name: "Hugs and Kisses XOXO",
         flavor: "Love",
-        price: "$60.00",
+        price: "$65.00",
         image: "vite-project/public/xoxocake.jpg",
     },
 ]
