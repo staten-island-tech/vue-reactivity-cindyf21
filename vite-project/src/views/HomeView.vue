@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DeskCard 
+    <CakeCard 
       v-for="destination in destinations" 
       :key="destination.name" 
       :Destination="destination"
@@ -9,43 +9,79 @@
 </template>
 
 <script setup>
-import DeskCard from "@/components/DeskCard.vue";
+import CakeCard from "@/components/CakeCard.vue";
 const destinations = [
 {
-        name: "Happy Fairy Pink Unicorn",
-        flavor: "Strawberry",
+        name: "happy fairy pink unicorn",
+        flavor: "strawberry",
         price: "$88.00",
-        image: "/pinkcake.jpg",
+        img: "/pinkcake.jpg",
     },
     {
-        name: "Death Wednesday Goth Black",
-        flavor: "Blackberry",
+        name: "death wednesday goth black",
+        flavor: "blackberry",
         price: "$88.00",
-        image: "/blackcake.jpg",
+        img: "/blackcake.jpg",
     },
     {
-        name: "Cream Milkshake White Ice",
-        flavor: "Pineberry",
+        name: "cream milkshake white ice",
+        flavor: "pineberry",
         price: "$88.00",
-        image: "/whitecake.jpg",
+        img: "/whitecake.jpg",
     },
     {
-        name: "Fresh Mint Air Water",
-        flavor: "Gooseberry",
+        name: "fresh mint air water",
+        flavor: "gooseberry",
         price: "$88.00",
-        image: "/mintcake.jpg",
+        img: "/mintcake.jpg",
     },
     {
-        name: "Happy Birthday Pink Fairy",
-        flavor: "Raspberry",
+        name: "happy birthday pink fairy",
+        flavor: "raspberry",
         price: "$60.00",
-        image: "./public/pinkbday.jpg",
+        img: "/pinkbday.jpg",
     },
     {
-        name: "Happy Brithday Ocean Blue",
-        flavor: "Blueberry",
+        name: "happy birthday ocean blue",
+        flavor: "blueberry",
         price: "$60.00",
-        image: "./public/bluebday.jpg",
+        img: "/bluebday.jpg",
+    },
+    {
+        name: "happy birthday flower pond",
+        flavor: "lemon water",
+        price: "$70.00",
+        img: "/flowerbday.jpg",
+    },
+    {
+        name: "happy birthday sprinkle mint",
+        flavor: "mint toothpaste",
+        price: "$65.00",
+        img: "/sprinklebday.jpg",
+    },
+    {
+        name: "pink blank vertical lines",
+        flavor: "pink",
+        price: "$55.00",
+        img: "/pinklinecake.jpg",
+    },
+    {
+        name: "painterly pink blue canvas",
+        flavor: "cotton candy",
+        price: "$75.00",
+        img: "/paintcake.jpg",
+    },
+    {
+        name: "double white horizontal lines",
+        flavor: "bananana",
+        price: "$200.00",
+        img: "/doublewhitecake.jpg",
+    },
+    {
+        name: "hugs and kisses xoxo",
+        flavor: "love",
+        price: "$65.00",
+        img: "/xoxocake.jpg",
     }
   ]
 </script>
