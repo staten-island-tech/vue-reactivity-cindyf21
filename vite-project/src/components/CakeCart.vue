@@ -1,34 +1,29 @@
 <template>
-    <div class="orderInfo">
+  <div class="order">
     <ul class="list">
-        <li class="info">{{ order }}</li>  
+      <li class="info">{{ order }} ~~~~ ${{ price }}</li>  
     </ul>
-    <ul class="list">
-      <li class="info">${{ price }}</li>  
-    </ul>
-    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "Cart",
-    props: {
-        order: String,
-        price: Number,
-    },
-    methods: {
-    }
+  name: "Cart",
+  props: {
+      order: String,
+      price: Number,
+  },
+  methods: {
+  }
 }
 </script>
 
 <style>
-.hidden {
-  display: none;
-}
 .list {
   list-style: none;
+  font-size: 1.1rem;
 }
-.orderInfo {
+.order {
   display:flex;
   flex-direction: row;
   align-items: center;

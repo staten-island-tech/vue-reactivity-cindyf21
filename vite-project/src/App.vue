@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
-    <section id="user-inputs">
-      <h1> fresh homemade cakes </h1>
-      <h2> buy online, pick up in store  </h2>
-      <div class="cake-choices">
+  <div id="gallery">
+    <section id="input">
+      <h1> Bake & Create </h1>
+      <h2 class="subtitle"> Buy Online, Pick Up In Store! </h2>
+      <div class="cakeChoices">
         <Card
           class="choice"
           v-for="(cakeChoice, index) in cakeChoices"
@@ -17,8 +17,8 @@
       </div>
     </section>
 
-    <section id="order-list">
-      <h2> shopping cart </h2>
+    <section id="orderList">
+      <h2 class="cartLabel"> Shopping Cart: </h2>
       <Cart
         class="cart"
         v-for="(cakeChoice, index) in order"
@@ -26,9 +26,9 @@
         :order="cakeChoice.cake"
         :price="cakeChoice.price"
       />
-      <h2> subtotal: ${{ subtotal }}</h2>
-      <button class="delete-btn" @click="removeLastItem()"> delete last </button>
-      <button class="delete-btn" @click="removeAllItems()"> delete all </button>
+      <h2 class="cartLabel"> Subtotal: ${{ subtotal }}</h2>
+      <button class="deleteBtn" @click="removeLast()"> Delete Last </button> 
+      <button class="deleteBtn" @click="removeAll()"> Delete All </button>
     </section>
   </div>
 </template>
@@ -130,15 +130,14 @@ export default {
       this.orderPrice.push(this.cakeChoices[index].price);
       this.subtotal = this.subtotal + this.cakeChoices[index].price;
     },
-    removeLastItem() {
+    removeLast() {
       if (this.order.length !== 0) {
-        this.subtotal =
-          this.subtotal - this.orderPrice[this.orderPrice.length - 1];
+        this.subtotal = this.subtotal - this.orderPrice[this.orderPrice.length - 1];
         this.order.pop();
         this.orderPrice.pop();
       }
     },
-    removeAllItems() {
+    removeAll() {
       this.order = [];
       this.orderPrice = [];
       this.subtotal = 0;
@@ -148,16 +147,16 @@ export default {
 </script>
 
 <style lang="css">
-#app {
+#gallery {
   text-align: center;
   display: flex;
   flex-direction: row;
-  background-color: #eccccc;
+  background-color: rgb(224, 223, 223);
 }
-#user-inputs {
+#input {
   width: 68vw;
 }
-.cake-choices {
+.cakeChoices {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -167,10 +166,10 @@ section {
   align-items: center;
   flex-direction: column;
 }
-#order-list {
+#orderList {
   margin: 1rem;
   height: auto;
-  background-color: #d89696;
+  background-color: #e9bcbc;
   width: 25vw;
 }
 h1 {
@@ -178,10 +177,16 @@ h1 {
   margin-bottom: 1rem;
   font-size: 2.8rem;
 }
+.subtitle {
+  font-style: italic;
+}
 h2 {
   margin-top: 2rem;
 }
-.delete-btn {
+.cartLabel {
+  text-decoration: underline;
+}
+.deleteBtn {
   margin-bottom: 1rem;
   background-color: black;
   color: white;
