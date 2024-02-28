@@ -4,7 +4,7 @@
     <h2 class="price"> ${{ price }} </h2>
     <img class="image" :src="cakeImage" :alt="description" />
     <h2 class="description"> {{ description }} </h2>
-    <button class="addCart" @click="$emit('addCakeList')"> Add To Cart </button>
+    <button class="addCart" @click="$emit('addCakeList')"> Add to Cart </button>
   </div>
 </template>
 

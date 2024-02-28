@@ -2,7 +2,7 @@
   <div id="gallery">
     <section id="input">
       <h1> BAKE & CREATE </h1>
-      <h2 class="subtitle"> Order Online, Pick Up In Store! </h2>
+      <h2 class="subtitle"> Order Online, Pick up in Store! </h2>
       <div class="cakeChoices">
         <Card
           class="choice"
