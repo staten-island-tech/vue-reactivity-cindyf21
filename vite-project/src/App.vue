@@ -1,8 +1,8 @@
 <template>
   <div id="gallery">
     <section id="input">
-      <h1> Bake & Create </h1>
-      <h2 class="subtitle"> Buy Online, Pick Up In Store! </h2>
+      <h1> BAKE & CREATE </h1>
+      <h2 class="subtitle"> Order Online, Pick Up In Store! </h2>
       <div class="cakeChoices">
         <Card
           class="choice"
@@ -74,13 +74,13 @@ export default {
     {
         cake: "happy birthday pink fairy",
         description: "cranberry",
-        price: 60,
+        price: 66,
         cakeImage: "/pinkbday.jpg",
     },
     {
         cake: "happy birthday ocean blue",
         description: "blue raspberry",
-        price: 60,
+        price: 66,
         cakeImage: "/bluebday.jpg",
     },
     {
@@ -92,31 +92,31 @@ export default {
     {
         cake: "happy birthday sprinkle mint",
         description: "mint toothpaste",
-        price: 65,
+        price: 66,
         cakeImage: "/sprinklebday.jpg",
     },
     {
         cake: "pink blank vertical lines",
         description: "pink lemonade",
-        price: 55,
+        price: 168,
         cakeImage: "/pinklinecake.jpg",
     },
     {
         cake: "painterly pink blue canvas",
         description: "rainbow sherbet",
-        price: 75,
+        price: 282,
         cakeImage: "/paintcake.jpg",
     },
     {
         cake: "double white horizontal lines",
         description: "butter pecan",
-        price: 200,
+        price: 1314,
         cakeImage: "/doublewhitecake.jpg",
     },
     {
         cake: "hugs and kisses xoxo",
         description: "black cherry",
-        price: 65,
+        price: 520,
         cakeImage: "/xoxocake.jpg",
     },   
       ],
